@@ -151,7 +151,7 @@ improve productivity and create better results.
 
 
  {/* ================= PROJECTS ================= */}
-<section id="projects" className="section bg-grid">np
+<section id="projects" className="section bg-grid">
   <div className="max-w-6xl mx-auto">
 
     <h2 className="text-4xl font-bold mb-10">
