@@ -171,9 +171,9 @@ improve productivity and create better results.
           link: "https://shreytech22.blogspot.com/",
         },
         {
-          title: "Project 2",
+          title: "Calculator",
           image: "/p2.png",
-          link: "https://project2-link.com",
+          link: "https://shrey-calculator.blogspot.com/",
         },
         {
           title: "Project 3",
