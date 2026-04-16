@@ -74,7 +74,7 @@ export default function ContactPage() {
               <FaGithub className="text-cyan-400" />
             </a>
 
-            <a href="https://www.linkedin.com/in/shreyansh-sharma-128772246/" target="_blank" className="text-3xl p-4 rounded-full glass">
+            <a href="https://www.linkedin.com/in/shreyansh1022/" target="_blank" className="text-3xl p-4 rounded-full glass">
               <FaLinkedin className="text-cyan-400" />
             </a>
           </div>
