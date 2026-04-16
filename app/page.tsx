@@ -128,7 +128,11 @@ improve productivity and create better results.
         "JavaScript",
         "Tailwind CSS",
         "Next.js",
+        "Node.js",
         "TypeScript",
+        "React",
+        "PHP",
+        "Laravel",
       ].map((skill, i) => (
         <motion.div
           key={i}
