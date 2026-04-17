@@ -133,6 +133,7 @@ improve productivity and create better results.
         "React",
         "PHP",
         "Laravel",
+        "MySQL",
       ].map((skill, i) => (
         <motion.div
           key={i}
