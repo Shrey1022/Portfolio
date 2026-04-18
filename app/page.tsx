@@ -114,41 +114,55 @@ improve productivity and create better results.
 
 {/* ================= SKILLS ================= */}
 <section className="section bg-[#0f172a]">
-  <div className="max-w-6xl mx-auto">
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-    <h2 className="text-4xl font-bold mb-10">
-      My <span className="text-gradient">Skills</span>
-    </h2>
+  {[
+    {
+      title: "Frontend & UI",
+      skills: ["HTML", "CSS", "Tailwind CSS"],
+    },
+    {
+      title: "Languages",
+      skills: ["JavaScript", "TypeScript", "PHP"],
+    },
+    {
+      title: "Frameworks",
+      skills: ["React", "Next.js", "Laravel"],
+    },
+    {
+      title: "Backend",
+      skills: ["Node.js"],
+    },
+    {
+      title: "Database",
+      skills: ["MySQL"],
+    },
+  ].map((category, i) => (
+    <motion.div
+      key={i}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: i * 0.1 }}
+      className="glass p-6 rounded-xl"
+    >
+      {/* Category Title */}
+      <h3 className="font-semibold text-lg mb-4">
+        {category.title}
+      </h3>
 
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+      {/* Skills List */}
+      <ul className="space-y-2 text-gray-300">
+        {category.skills.map((skill, idx) => (
+          <li key={idx} className="flex items-center gap-2">
+            <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
+            {skill}
+          </li>
+        ))}
+      </ul>
+    </motion.div>
+  ))}
 
-      {[
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Tailwind CSS",
-        "Next.js",
-        "Node.js",
-        "TypeScript",
-        "React",
-        "PHP",
-        "Laravel",
-        "MySQL",
-      ].map((skill, i) => (
-        <motion.div
-          key={i}
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: i * 0.1 }}
-          whileHover={{ scale: 1.08 }}
-          className="glass p-6 rounded-xl text-center cursor-pointer 
-                     hover:shadow-[0_0_25px_rgba(34,211,238,0.3)] transition"
-        >
-          <h3 className="font-semibold text-lg">{skill}</h3>
-        </motion.div>
-      ))}
-
-    </div>
+</div>
   </div>
 </section>
 
